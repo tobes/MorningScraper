@@ -35,15 +35,24 @@ def fix_url(url):
 
 def search(ref, verbose=False):
     ''' Search morningstar.co.uk for ref
+
         If ref is found and is a fund or stock return details
+
+        .. warning:: This only retrieves the first few funds/stocks found
 
         Args:
             ref (str): search term can be ISIN or search term
             verbose (bool): provide output
 
         Returns:
-            list of dicts: containing info::
-                dict for stock:
+
+            list: list containing dict for each found entry
+
+
+            **dict for stock:**
+
+            .. code::
+
                 {
                     'name': (str) name of stock
                     'url': (str) url for stock info
@@ -52,7 +61,10 @@ def search(ref, verbose=False):
                     'currency': (str) currency code of stock
                 }
 
-                dict for fund:
+            **dict for fund:**
+
+            .. code::
+
                 {
                     'name': (str) name of fund
                     'url': (str) url for fund info
@@ -107,14 +119,18 @@ def search(ref, verbose=False):
 
 def get_data(ref, verbose=False):
     ''' Search morningstar.co.uk for ref
+
         If ref is found return details for each fund/stock
 
         Args:
             ref (str): search term can be ISIN or search term
-            verbose (bool): provide output
+            verbose (bool): provide outpuss
 
         Returns:
-            list of dicts: containing info::
+            list: list containing dict for each found entry
+
+            .. code::
+
                 [{
                     'name': (str) name of the fund/stock
                     'ISIN': (str) ISIN reference for the fund/stock
@@ -125,6 +141,7 @@ def get_data(ref, verbose=False):
                     'type': (str) e.g. Fund Stock
                     'url': (str) fully qualified url info gathered from
                 }, ...]
+
     '''
     results = search(ref, verbose=verbose)
     output = []
@@ -143,7 +160,10 @@ def get_url(url, verbose=False):
             verbose (bool): provide output
 
         Returns:
-            dict: containing info::
+            dict: list containing fund/stock info
+
+            .. code::
+
                 {
                     'name': (str) name of the fund/stock
                     'ISIN': (str) ISIN reference for the fund/stock
