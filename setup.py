@@ -6,7 +6,7 @@ long_desc = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 setup(
     name="MorningScraper",
     version="0.1",
-    author="Toby Dacre Carter",
+    author="Toby Dacre",
     author_email="toby.junk@gmail.com",
     description=('Simple scraper for morningstar.co.uk'),
     license="LGPLv2",
