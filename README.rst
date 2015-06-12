@@ -19,6 +19,12 @@ Some stocks are updated via javascript and so the information is not available b
 ``'GOOG NASDAQ'`` - Google Inc Class C Capital Stock
 
 
+installation
+^^^^^^^^^^^^
+
+.. code::
+
+    pip install MorningScraper
 
 
 functions
