@@ -21,6 +21,12 @@ A quick and dirty web page scraper for `morningstar.co.uk <http://morningstar.co
 ``'GOOG NASDAQ'`` - Google Inc Class C Capital Stock
 
 
+Documentation
+^^^^^^^^^^^^^
+
+Documentation available at `http://pythonhosted.org/MorningScraper <http://pythonhosted.org/MorningScraper>`_
+
+
 Installation
 ^^^^^^^^^^^^
 

@@ -5,12 +5,6 @@
 
 .. include:: ../README.rst
 
-Documentation
-^^^^^^^^^^^^^
-
-Documentation available at `http://pythonhosted.org/MorningScraper <http://pythonhosted.org/MorningScraper>`_
-
-
 Source code
 ^^^^^^^^^^^
 
